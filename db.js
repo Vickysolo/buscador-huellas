@@ -4,7 +4,7 @@ const db = require('mongoose');
 db.Promise = global.Promise;
 
 exports.connect = async (url) => {
-    await db.connect(url, {useNewUrlParser: true, useUnifiedTopology:true})
+    await db.connect(url, {useNewUrlParser: true, useUnifiedTopology:true, useFindAndModify:false})
     .then(() => {
         console.log('[db connection] Database connected');
     })
