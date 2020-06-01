@@ -22,6 +22,10 @@ const mySchema = new Schema({
         type:[Number],
         required: true
     },
+    Active: {
+        type: Boolean,
+        default: true
+    },
     date: Date
 })
 
