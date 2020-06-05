@@ -22,7 +22,7 @@ const mySchema = new Schema({
         type:[Number],
         required: true
     },
-    Active: {
+    active: {
         type: Boolean,
         default: true
     },

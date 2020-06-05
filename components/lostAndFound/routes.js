@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
 
 router.get('/lost', (req, res) => {
     let animal = req.query.animalType || null;
-    controller.getAllLost(animal)
+    controller.getAllLostFound('lost', animal)
         .then((data) => {
             response.sucess(req, res, data, 201);
         })
@@ -38,7 +38,7 @@ router.get('/lost', (req, res) => {
 
 router.get('/found', (req, res) => {
     let animal = req.query.animalType || null;
-    controller.getAllFound(animal)
+    controller.getAllLostFound('found', animal)
         .then((data) => {
             response.sucess(req, res, data, 201);
         })

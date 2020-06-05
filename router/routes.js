@@ -1,6 +1,6 @@
 const express = require('express');
 const pets = require('../components/pets/routes')
-const lostAndFound = ('../components/lostAndFound/routes')
+const lostAndFound = require('../components/lostAndFound/routes')
 
 
 const routes = function (server){
